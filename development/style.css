@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .bg-white {
@@ -614,4 +615,114 @@ nav ul li a {
   display: block;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*Início das configurações da header*/
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f1c40f;
+}
+
+.brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+}
+
+/*Início das configurações da Navigation*/
+.menu {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+.menu ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.menu ul a {
+  width: 20%;
+  height: inherit;
+  color: #FFF;
+  display: inline-block;
+}
+
+.menu ul a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+label.menu-icon img {
+  width: 30px;
+  height: auto;
+}
+
+/*Início das configurações da Navigation com dispositivos < 768px*/
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .menu ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
+    /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
+  }
+  .menu ul a {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background-color: #181818;
+    padding: 10px 0px 10px 5%;
+  }
+  .menu-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    line-height: 60px;
+  }
+  #menuToggle:checked ~ ul {
+    max-height: 350px;
+    /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+  }
+  .menu-icon i {
+    font-size: 1.7em;
+  }
 }
