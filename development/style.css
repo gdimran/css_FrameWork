@@ -145,129 +145,54 @@
   background-color: #ddffff;
 }
 
-html {
-  box-sizing: border-box;
-  overflow-x: hidden;
+.text-lowercase {
+  text-transform: lowercase;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.text-capitalize {
+  text-transform: capitalize;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.5;
+.text-normal {
+  font-weight: normal;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-a {
-  background-color: transparent;
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-button,
-input,
-select,
-textarea,
-optgroup {
-  font: inherit;
-  margin: 0;
-}
-
-optgroup {
+.text-bold {
   font-weight: bold;
 }
 
-button,
-input {
-  overflow: visible;
+.text-italic {
+  font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  margin-top: 11px;
-  margin-bottom: 10px;
-  font-weight: 400;
+.text-large {
+  font-size: 1.2em;
 }
 
-p {
-  margin-top: 5px;
-  margin-bottom: 7px;
+.text-small {
+  font-size: .9em;
+}
+
+.text-tiny {
+  font-size: .8;
+}
+
+.text-clip {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.text-break {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .text-left {
@@ -428,6 +353,135 @@ p {
 
 .text-pale-blue {
   color: #ddffff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #5755d9;
+  line-height: 1.5;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+  font: inherit;
+  margin: 0;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 11px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
 
 .mab-container:after,
@@ -599,7 +653,7 @@ p {
 }
 
 nav {
-  background-color: #333;
+  background-color: #5755d9;
 }
 
 nav ul {
@@ -654,8 +708,10 @@ header {
   height: inherit;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
   /* TWEENER - IE 10 */
   /* NEW - Chrome */
   display: flex;
@@ -698,6 +754,7 @@ label.menu-icon img {
     display: block;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.3s;
     transition: max-height 0.3s;
     /*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
     /*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
@@ -726,3 +783,4 @@ label.menu-icon img {
     font-size: 1.7em;
   }
 }
+/*# sourceMappingURL=style.css.map */

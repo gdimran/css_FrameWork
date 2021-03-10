@@ -1,4 +1,43 @@
+
+//Text utlilities including colors and alginments
 .text{
+    &-lowercase{
+        text-transform: lowercase;
+    }
+    &-uppercase{
+        text-transform: uppercase;
+    }
+    &-capitalize{
+        text-transform: capitalize;
+    }
+    &-normal{
+        font-weight: normal;
+    }
+    &-bold{
+        font-weight: bold;
+    }
+    &-italic{
+        font-style: italic;
+    }
+    &-large{
+        font-size: 1.2em;
+    }
+    &-small{
+        font-size: .9em;
+    }
+    &-tiny{
+        font-size: .8;
+    }
+    &-clip{
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+    }
+    &-break{
+        hyphens: auto;
+        word-break: break-word;
+        word-wrap: break-word;
+    }
     &-left{
         text-align: left;
     }

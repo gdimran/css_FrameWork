@@ -1,0 +1,26 @@
+//Background color utility mixing
+
+@mixin bg-color-var($name:".bg-primary", $color:$primary-color) { 
+    #{$name}{
+        background: $color !important;
+        @if(lightness($color)<60){
+            color: $light-color;
+        }
+    }
+}
+
+//Text color mixing for utility
+@mixin text-color-var($name:".text-primary", $color:$primary-color) { 
+    #{$name}{
+        color: $color !important;   
+    }
+    a#{$name}{
+        &:focus,
+        &:hover{
+            color: darken($color,5%); 
+        }
+        &:visited{
+            color: lighten($color,5%);
+        } 
+    }
+}
