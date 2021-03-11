@@ -7,67 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
     <link href="development/style.css" rel="stylesheet" type="text/css">
+    <link href="custom.css" rel="stylesheet" type="text/css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <aside>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Recent Work</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </aside>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Recent Work</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="mab-container">
-        <div class="mab-row">
-            <header>
-                <figure class="brand " >Responsive</figure>
-                <nav class="menu">
-                    <input type="checkbox" id="menuToggle">
-                    <label for="menuToggle" class="menu-icon"><img src="menu.svg"></label>
-                    <ul>
-                        <a href="http://stackoverflow.com/questions/9191803/why-does-z-index-not-work">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>Sobre</li>
-                        </a>
-                        <a href="#">
-                            <li>Serviços</li>
-                        </a>
-                        <a href="#">
-                            <li>Equipe</li>
-                        </a>
-                        <a href="#">
-                            <li>Contato</li>
-                        </a>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-
-
-        <p class="bg-deep-orange">Testing color</p>
-        <div class="mab-container">
+    <section class="main-header">
+        <div class="mab-container-full">
             <div class="mab-row">
-                <div class="mab-col s12 mab-col l4 mab-col m4 text-cyan">Test</div>
-                <div class="mab-col s12 mab-col l4 mab-col m4">Test</div>
-                <div class="mab-col s12 mab-col l4 mab-col m4">Test</div>
+                <div class="header-top bg-light-gray mb-4">
+                    <div class="mab-container">
+                        <div class="mab-half float-left d-inline-block social-media">
+                            <ul>
+                                <li><a href="">f</a></li>
+                                <li><a href="">t</a></li>
+                                <li><a href="">in</a></li>
+                                <li><a href="">y</a></li>
+                            </ul>
+                        </div>
+                        <div class="mab-half float-right flex-right pb-2 pt-2">
+                            <div class="input-group input-inline">
+                                <input class="form-input" type="text" placeholder="search">
+                                <button class="btn btn-primary input-group-btn">Search</button>
+                              </div>
+                            <div class="phone-number  mr-4">+880 1730010555</div>
+                            <div class="store-locator">
+                                <select name="showroom" id="showroom-location">
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Chattogram">Chattogram</option>
+                                    <option value="Sylhet">Sylhet</option>
+                                    <option value="Hobiganj">Hobiganj</option>
+                                    <option value="Khulna">Khulna</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <div class="mab-container">
+        <div class="mab-row">
+            <header class="navbar">
+                <section class="navbar-section">
+                  <a href="..." class="navbar-brand brand mr-2"><img src="KCL.svg" alt="KhadimCeramic"></a>
+                </section>
+                <section class="navbar-section">
+                    <nav class="menu">
+                        <input type="checkbox" id="menuToggle">
+                        <label for="menuToggle" class="menu-icon"><img src="menu.svg"></label>
+                        <ul>
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About Us</li>
+                            </a>
+                            <a href="#">
+                                <li>Products</li>
+                            </a>
+                            <a href="#">
+                                <li>Remarkable Project</li>
+                            </a>
+                            <a href="#">
+                                <li>Career</li>
+                            </a>
+                            <a href="#">
+                                <li>Download</li>
+                            </a>
+                            <a href="#">
+                                <li>Request a Quotation</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </section>
+              </header>
+        </div>
+
+
+       
 </body>
 
 </html>

@@ -1,6 +1,23 @@
-@import "utlilities";
+//Variables and mixins
+@import "variables";
 @import "mixins";
+
+//Utility calsses
+@import "utlilities";
+
+//Reset and dependencies
+@import "normalize";
 @import "base";
+
+//Elements
+@import "buttons";
+@import "media";
+@import "forms";
+
+//Layout
 @import "layout";
-@import "navigation";
+@import "navbar";
+@import "hero";
 @import "header_components";
+
+//Components

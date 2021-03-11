@@ -1,6 +1,6 @@
-.clearfix{
-    @include clearfix();
-}
+// .clearfix{
+//     @include clearfix();
+// }
 //position
 .float-left{
     float: left !important;
@@ -31,12 +31,36 @@
     display: flex;
     justify-content: center;
 }
+.flex-right{
+    align-items: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.m-auto{
+    margin: auto;
+}
 
 //specing
 
 @include margin-variant(0,0);
-@include margin-variant(1,$mUint-1);
-@include margin-variant(2,$mUint-2);
+@include margin-variant(1,$mUnit-1);
+@include margin-variant(2,$mUnit-2);
+@include margin-variant(3,$mUnit-3);
+@include margin-variant(4,$mUnit-4);
+@include margin-variant(5,$mUnit-5);
+@include margin-variant(6,$mUnit-6);
+@include margin-variant(7,$mUnit-7);
+@include margin-variant(8,$mUnit-8);
+@include margin-variant(9,$mUnit-9);
+@include margin-variant(10,$mUnit-10);
 @include padding-variant(0,0);
-@include padding-variant(1,$mUint-1);
-@include padding-variant(2,$mUint-2);
+@include padding-variant(1,$mUnit-1);
+@include padding-variant(2,$mUnit-2);
+@include padding-variant(3,$mUnit-3);
+@include padding-variant(4,$mUnit-4);
+@include padding-variant(5,$mUnit-5);
+@include padding-variant(6,$mUnit-6);
+@include padding-variant(7,$mUnit-7);
+@include padding-variant(8,$mUnit-8);
+@include padding-variant(9,$mUnit-9);
+@include padding-variant(10,$mUnit-10);

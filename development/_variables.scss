@@ -2,21 +2,21 @@
 $rtl: false !default;
 
 //measuring unit sizes
-$mUint-s: .05rem !default; //starting unit
-$mUint-b: .1rem !default; //base unit
-$mUint-1: .2rem !default;
-$mUint-2: .4rem !default;
-$mUint-3: .6rem !default;
-$mUint-4: .8rem !default;
-$mUint-5: 1rem !default;
-$mUint-6: 1.2rem !default;
-$mUint-7: 1.4rem !default;
-$mUint-8: 1.6rem !default;
-$mUint-9: 1.8rem !default;
-$mUint-10: 2rem !default;
-$mUint-11: 2.2rem !default;
-$mUint-12: 2.4rem !default;
-$mUint-13: 3.2rem !default;
+$mUnit-s: .05rem !default; //starting unit
+$mUnit-b: .1rem !default; //base unit
+$mUnit-1: .2rem !default;
+$mUnit-2: .4rem !default;
+$mUnit-3: .6rem !default;
+$mUnit-4: .8rem !default;
+$mUnit-5: 1rem !default;
+$mUnit-6: 1.2rem !default;
+$mUnit-7: 1.4rem !default;
+$mUnit-8: 1.6rem !default;
+$mUnit-9: 1.8rem !default;
+$mUnit-10: 2rem !default;
+$mUnit-11: 2.2rem !default;
+$mUnit-12: 2.4rem !default;
+$mUnit-13: 3.2rem !default;
 
 
 //Font sizes
@@ -27,24 +27,29 @@ $font-size-small: .7rem !default;
 $font-size-large: .9rem !default;
 $line-height: 1.2rem !default;
 
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//Font family
+$body-font-family:"Lato" !default;
+$title-font-family: "Poppins" !default;
 // Sizes
-$layout-spacing: $unit-2 !default;
-$layout-spacing-sm: $unit-1 !default;
-$layout-spacing-lg: $unit-4 !default;
-$border-radius: $unit-h !default;
-$border-width: $unit-o !default;
-$border-width-lg: $unit-h !default;/*
-$control-size: $unit-9 !default;
-$control-size-sm: $unit-7 !default;
-$control-size-lg: $unit-10 !default;
-$control-padding-x: $unit-2 !default;
-$control-padding-x-sm: $unit-2 * .75 !default;
-$control-padding-x-lg: $unit-2 * 1.5 !default;
+$layout-spacing: $mUnit-2 !default;
+$layout-spacing-sm: $mUnit-1 !default;
+$layout-spacing-lg: $mUnit-4 !default;
+$border-radius: $mUnit-b !default;
+$border-width: $mUnit-s !default;
+$border-width-lg: $mUnit-b !default;
+$control-size: $mUnit-9 !default;
+$control-size-sm: $mUnit-7 !default;
+$control-size-lg: $mUnit-10 !default;
+$control-padding-x: $mUnit-2 !default;
+$control-padding-x-sm: $mUnit-2 * .75 !default;
+$control-padding-x-lg: $mUnit-2 * 1.5 !default;
 $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 $control-icon-size: .8rem !default;
-
+/*
 $control-width-xs: 180px !default;
 $control-width-sm: 320px !default;
 $control-width-md: 640px !default;

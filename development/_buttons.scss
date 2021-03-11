@@ -97,13 +97,13 @@
       
         // Button Sizes
         &.btn-sm {
-          font-size: $font-size-sm;
+          font-size: $font-size-small;
           height: $control-size-sm;
           padding: $control-padding-y-sm $control-padding-x-sm;
         }
       
         &.btn-lg {
-          font-size: $font-size-lg;
+          font-size: $font-size-large;
           height: $control-size-lg;
           padding: $control-padding-y-lg $control-padding-x-lg;
         }
@@ -134,14 +134,14 @@
           background: transparent;
           border: 0;
           color: currentColor;
-          height: $unit-5;
-          line-height: $unit-4;
-          margin-left: $unit-1;
+          height: $mUnit-5;
+          line-height: $mUnit-4;
+          margin-left: $mUnit-1;
           margin-right: -2px;
           opacity: 1;
-          padding: $unit-h;
+          padding: $mUnit-b;
           text-decoration: none;
-          width: $unit-5;
+          width: $mUnit-5;
       
           &:focus,
           &:hover {
